@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ************* */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    /* border: 1px solid; */
+}
+
+.fa-film {
+    font-size: 40px;
+    color: rgb(139, 199, 235);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo_text {
+    font-size: 25px;
+    color: rgb(139, 199, 235);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* .navigation_link {
+    color: gray;
+    font-size: 20px;
+} */
+
+.navigation li a {
+    color: gray;
+    font-size: 20px;
+}
