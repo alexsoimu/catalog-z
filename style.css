@@ -65,6 +65,30 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    width: 300px;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: rgb(0, 153, 153);
+    border: none;
+}
+
+::placeholder {
+    color: rgb(0, 153, 153);
+}
+
+.search button {
+    font-size: 18px;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    background-color: rgb(0, 153, 153);
 }
 
 @media (max-width: 620px) {
