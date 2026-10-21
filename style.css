@@ -91,6 +91,30 @@ nav {
     background-color: rgb(0, 153, 153);
 }
 
+.photos_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 50px 20px 50px;
+    border: 1px solid;
+}
+
+.photos_title h2 {
+    font-size: 35px;
+    color: rgb(0, 153, 153);
+}
+
+.photos_title p {
+    color: rgb(0, 153, 153);
+    font-size: 18px;
+}
+
+.photos_title p span {
+    border: 1px solid grey;
+    padding: 3px 8px;
+    background-color: ##f4f4f4;
+}
+
 @media (max-width: 620px) {
     nav {
         flex-direction: column;
