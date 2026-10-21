@@ -96,7 +96,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 80px 50px 20px 50px;
-    border: 1px solid;
 }
 
 .photos_title h2 {
@@ -113,6 +112,27 @@ nav {
     border: 1px solid grey;
     padding: 3px 8px;
     background-color: ##f4f4f4;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.photo {
+    width: 420px;
+}
+
+.phot_img img {
+    width: 420px;
+}
+
+.pfoto_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @media (max-width: 620px) {
