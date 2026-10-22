@@ -57,6 +57,12 @@ nav {
     font-size: 20px;
 }
 
+.navigation li a:hover {
+    color: rgb(139, 199, 235);
+    text-decoration: underline;
+    transition: 1s;
+}
+
 .search {
     border: 1px solid;
     width: 100%;
@@ -146,6 +152,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
     padding: 80px 50px 80px 50px;
 }
 
@@ -172,6 +180,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .footer_top-info h3,
@@ -201,6 +210,12 @@ footer {
     padding: 15px;
 }
 
+.footer_top-social a i:hover {
+    background-color: rgb(0, 153, 153);
+    color: white;
+    transition: 0.5s;
+}
+
 .footer_top-policy {
     display: flex;
     flex-direction: column;
@@ -214,9 +229,24 @@ footer {
     width: fit-content;
 }
 
+.footer_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 330px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 620px) {
     nav {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 830px) {
+    .footer_bottom {
+        gap: 30px;
     }
 }
 
