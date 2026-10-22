@@ -111,20 +111,26 @@ nav {
 .photos_title p span {
     border: 1px solid grey;
     padding: 3px 8px;
-    background-color: ##f4f4f4;
+    background-color: #f4f4f4;
 }
 
 .photos {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 50px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding: 0px 50px;
+    gap: 28px;
 }
 
-.photo {
-    width: 420px;
+.photos_margin {
+    margin-top: 34px;
 }
 
+.photo,
 .phot_img img {
     width: 420px;
 }
@@ -133,10 +139,63 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 50px 80px 50px;
+}
+
+.btn button {
+    font-size: 18px;
+    background-color: rgb(0, 153, 153);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn_current button {
+    padding: 10px 15px;
+}
+
+.btn_prev button,
+.btn_next button {
+    padding: 10px 25px;
 }
 
 @media (max-width: 620px) {
     nav {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 515px) {
+    .search input {
+        width: 250px;
+    }
+
+    .photos_title {
+        padding: 40px 25px 20px 25px;
+    }
+
+    .photos {
+        padding: 0px 25px;
+    }
+
+    .photos_title h2 {
+        font-size: 25px;
+    }
+
+    .photos_title p span {
+        font-size: 16px;
+    }
+
+    .photo,
+    .phot_img img {
+        width: 250px;
     }
 }
