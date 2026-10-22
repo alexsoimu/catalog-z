@@ -167,6 +167,53 @@ nav {
     padding: 10px 25px;
 }
 
+.footer_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer_top-info h3,
+.footer_top-links h3 {
+    color: rgb(0, 153, 153);
+    font-size: 25px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 60px 0px;
+}
+
+.footer_top-info p {
+    width: 440px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.footer_top-links ul {
+    margin-top: 30px;
+}
+
+.footer_top-social a i {
+    color: gray;
+    background-color: white;
+    padding: 15px;
+}
+
+.footer_top-policy {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: right; */
+    align-items: end;
+    margin-top: 35px;
+    gap: 10px;
+}
+
+.footer_top-policy a {
+    width: fit-content;
+}
+
 @media (max-width: 620px) {
     nav {
         flex-direction: column;
